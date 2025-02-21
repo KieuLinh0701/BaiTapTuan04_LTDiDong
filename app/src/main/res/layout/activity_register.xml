@@ -24,15 +24,15 @@
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome\nBack"
+        android:text="Create\nAccount"
         android:textColor="@color/orange"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:paddingLeft="40dp"
+        android:paddingLeft="20dp"
         app:layout_constraintTop_toBottomOf="@id/backgroundImage"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="25dp" />
 
-    <!-- Icon và TextInput Password -->
+    <!-- Icon và TextInput Name -->
     <LinearLayout
         android:id="@+id/nameContainer"
         android:layout_width="0dp"
@@ -41,23 +41,40 @@
         app:layout_constraintTop_toBottomOf="@id/welcomeText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:padding="8dp">
+        android:layout_marginTop="30dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/name"
-            android:tint="@color/blue" />
+            android:tint="@color/blue"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:hint="Name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="@null"
+            android:textSize="16sp"
+            android:padding="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/nameContainer" />
 
     <!-- Icon và TextInput Email -->
     <LinearLayout
@@ -68,24 +85,40 @@
         app:layout_constraintTop_toBottomOf="@id/nameContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:padding="8dp">
+        android:layout_marginTop="30dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/email"
-            android:layout_gravity="center"
-            android:tint="@color/blue" />
+            android:tint="@color/blue"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:background="@null"
+            android:textSize="16sp"
+            android:padding="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/emailContainer" />
 
     <!-- Icon và TextInput Password -->
     <LinearLayout
@@ -96,23 +129,40 @@
         app:layout_constraintTop_toBottomOf="@id/emailContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:padding="8dp">
+        android:layout_marginTop="30dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/password"
-            android:tint="@color/blue" />
+            android:tint="@color/blue"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:background="@null"
+            android:textSize="16sp"
+            android:padding="0dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordContainer" />
 
     <!-- Button mũi tên -->
     <ImageView
@@ -120,10 +170,10 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@drawable/btn_arrow2"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/passwordContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="55dp"
         android:elevation="4dp" />
 
 
@@ -137,7 +187,7 @@
         app:layout_constraintTop_toBottomOf="@id/arrowButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="45dp"
         android:textStyle="bold"
         />
 
